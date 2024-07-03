@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/css/tbl.css">
+</head>
+<body>
+	<h1 class="head">Series </h1>
+	<h1 class="h2">Table ...</h1>
+	<table border="1">
+		
+		<tr>
+			<td>1.<br>2.<br>3.<br>4.<br>5.<br>6.<br>7.<br>8.<br>9.<br>10.</td>
+			<td id = "td1" ></td>
+			<td id = "td2" ></td>
+			<td id = "td3" ></td>
+			<td id = "td4" ></td>
+		</tr>
+	</table>
+	<button onclick="fun();">GO !</button>
+	
+	<script type="text/javascript">
+		function fun() {
+			
+			var a = 1, b = 1;
+			while( a <= 10 )  {
+				var n = 2;
+				var m = 5;
+				n*=a;
+				m*=b;
+				td4.innerHTML+=m+'<br>';
+				b++;
+				td1.innerHTML += n + '<br>';
+				a++;
+				
+			}
+			var b=0;
+			while(b < 20)
+			{
+				if(b%2!=0)
+				{
+					td2.innerHTML+= b + '<br>';
+				}
+				else
+				{
+					td3.innerHTML+= b + '<br>';
+				}
+				b++;
+			}
+
+
+		}
+	</script>
+</body>
+</html>
